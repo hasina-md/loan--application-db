@@ -36,7 +36,7 @@ INSERT INTO `LOAN` (
     'PURPOSE',
     'STATUS',
 ) 
- INSERT INTO VALUES (
+ INSERT INTO loan VALUES (
     1,
     'JOHN',
     'DOE',
@@ -55,7 +55,7 @@ VALUES (
      'approved';
 )
 
- INSERT INTO VALUES (
+ INSERT INTO loan VALUES (
     3,
     'bob',
     'johnson',
@@ -65,7 +65,7 @@ VALUES (
     'pending';
     ) 
 
-    INSERT INTO VALUES (
+    INSERT INTO loan VALUES (
     4,
     'emily',
     'brown',
@@ -75,7 +75,7 @@ VALUES (
     'approved';
     )
 
-   INSERT INTO VALUES (
+   INSERT INTO loan VALUES (
     5,
     'michel',
     'davis',
@@ -83,7 +83,7 @@ VALUES (
     20000,
     'educatin';
   )
- INSERT INTO VALUES  (
+ INSERT INTO loan VALUES  (
     6,
     'sarah',
     'wilson',
@@ -96,7 +96,7 @@ VALUES (
    SELECT * FROM loan WHERE STATUS=approved;
    SELECT * FROM loan WHERE loan_amount='approved';
    SELECT * FROM loan WHERE loan_amount > 10000;
-   UPDATE FROM loan debt consolidation ='approved';
+   UPDATE FROM loan WHERE debt consolidation ='approved';
    UPDATE loan SET loan_amount= 70000 WHERE ID = 1;
    DELETE FROM loan WHERE STATUS='denied';
    SELECT FIRST_NAME,last_name,loan_amount FROM loan;
