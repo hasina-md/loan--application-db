@@ -17,15 +17,16 @@
    - TEXT.
 
 
- --create loan `table` (
-`ID` TEXT NOT NULL,
-`FIRST_NAME` TEXT NOT NULL,
-`SECOND_NAME` TEXT NOT NULL,
-`EMAIL` TEXT NOT NULL,
-`LOAN_AMOUNT` INT,
-`PURPOSE` TEXT,
-`STATUS` TEXT
-) ENGINE = InnoDB; 
+ --create loan `table` with stucture has changed with 'NOT NULL'
+
+   ID          INT NOT NULL,
+  FIRST_NAME   VARCHAR NOT NULL,
+  SECOND_NAME  VARCHAR NOT NULL,
+  EMAIL        VARCHAR NOT NULL,
+  LOAN_AMOUNT  INT NOT NULL,
+  PURPOSE       VARCHAR NOT NULL,
+  STATUS       VARCHAR NOT NULL
+ ENGINE = InnoDB; 
 
 INSERT INTO `LOAN` (
     ID,
@@ -34,8 +35,10 @@ INSERT INTO `LOAN` (
     'EMAIL',
     'LOAN_AMOUNT',
     'PURPOSE',
-    'STATUS',
+    'STATUS';
 ) 
+  -- created multiple row values.
+
  INSERT INTO loan VALUES (
     1,
     'JOHN',
@@ -45,7 +48,7 @@ INSERT INTO `LOAN` (
     'home improvement',
     'approved';
 )
-VALUES (
+    INSERT INTO loan VALUES (
     2,
     'jane',
     'smith',
@@ -103,3 +106,6 @@ VALUES (
    SELECT AVG (loan_amount) FROM loan;
    UPDATE loan SET EMAIL='sarah.wilson@xample.com';
    DELETE loan SET loan_amount= 15000 WHERE ID = 3;
+
+
+   -- drop table of loan means del.
