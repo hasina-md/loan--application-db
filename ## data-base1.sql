@@ -2,19 +2,19 @@
  loan table will have 7 columns.
 
  1. ID
-   -tinyint
+   - INT,
  2. first_name
-  - TEXT
+  - VARCHAR(100),
  3. last_name
-   - TEXT
+   - VARCHAR(100),
  4. Email
-   - TEXT
+   - VARCHAR(100),
  5. loan_amount
-   -int
+   - INT
  6. purpose
-   - TEXT
+   - VARCHAR(250),
  7. status
-   - TEXT.
+   - VARCHAR(25),
 
 
  --create loan `table` with stucture has changed with 'NOT NULL'
