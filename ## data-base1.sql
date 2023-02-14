@@ -2,27 +2,27 @@
  loan table will have 7 columns.
 
  1. ID
-   - INT,
+   - INT NOT NULL AUTO_INCREMENT,
  2. first_name
   - VARCHAR(100),
  3. last_name
    - VARCHAR(100),
  4. Email
-   - VARCHAR(100),
+   - VARCHAR(100) NOT NULL UNIQUE,
  5. loan_amount
    - INT
  6. purpose
    - VARCHAR(250),
  7. status
    - VARCHAR(25),
-
+    PRIMARY KEY (ID)
 
  --create loan `table` with stucture has changed with 'NOT NULL'
 
    ID          INT NOT NULL,
   FIRST_NAME   VARCHAR NOT NULL,
   SECOND_NAME  VARCHAR NOT NULL,
-  EMAIL        VARCHAR NOT NULL,
+  EMAIL        VARCHAR NOT NULL, 
   LOAN_AMOUNT  INT NOT NULL,
   PURPOSE       VARCHAR NOT NULL,
   STATUS       VARCHAR NOT NULL
